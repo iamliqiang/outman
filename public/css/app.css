@@ -1,0 +1,164 @@
+@charset "GBK";
+/* Artfully masterminded by ZURB  */
+/* line 3, ../zurb/sass/app.scss */
+body {
+  font-family: "Microsoft YaHei", sans-serif, Tahoma, Verdana,  Helvetica;
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 18px;
+  color: #555;
+}
+
+/* line 11, ../zurb/sass/app.scss */
+footer, header, menu, section {
+  display: block;
+  font-size: 13px;
+}
+/* line 14, ../zurb/sass/app.scss */
+footer ul, header ul, menu ul, section ul {
+  list-style: none outside none;
+}
+/* line 16, ../zurb/sass/app.scss */
+footer ul li, header ul li, menu ul li, section ul li {
+  display: block;
+  float: right;
+  padding-left: 2%;
+}
+
+/* line 26, ../zurb/sass/app.scss */
+#login-header {
+  margin: 15px auto 0;
+}
+
+/* line 31, ../zurb/sass/app.scss */
+header .login {
+  float: right;
+  font-family: "宋体";
+  height: 23px;
+  line-height: 22px;
+  padding: 1px 0 0 0;
+}
+/* line 38, ../zurb/sass/app.scss */
+header .login dd {
+  padding: 1px 9px;
+  _padding: 3px 9px;
+  _line-height: 16px;
+  background: url("../img/portal/line_dot_v.png") no-repeat right;
+  float: left;
+}
+/* line 45, ../zurb/sass/app.scss */
+header .login a {
+  color: #666;
+  line-height: 22px;
+  _line-height: 16px;
+  text-decoration: none;
+}
+
+/* line 55, ../zurb/sass/app.scss */
+.login-form {
+  padding: 25px;
+}
+
+/* line 59, ../zurb/sass/app.scss */
+.container {
+  padding: 0 20px;
+}
+
+/* line 63, ../zurb/sass/app.scss */
+.footer-grey {
+  background-color: #F5F5F5;
+  background-image: url("../img/misc/footer-shadow.gif");
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin-top: 180px;
+  color: #767676;
+}
+
+/* line 72, ../zurb/sass/app.scss */
+div.bold-footer {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/* line 80, ../zurb/sass/app.scss */
+.footer-grey #otcontact,
+.footer-grey #otword,
+.footer-grey #otnews {
+  padding-top: 30px;
+}
+
+/* line 84, ../zurb/sass/app.scss */
+ul.footer-nav li {
+  display: block;
+  float: right;
+  padding-left: 3%;
+}
+
+/* line 94, ../zurb/sass/app.scss */
+#sub-nav {
+  margin-top: 10px;
+  padding-top: 3px;
+}
+/* line 98, ../zurb/sass/app.scss */
+#sub-nav .nice.tabs {
+  border-bottom: 1px solid #EEEEEE;
+  height: 23px;
+  margin: 0 0 30px;
+  display: block;
+  height: 30px;
+  padding: 0;
+}
+/* line 105, ../zurb/sass/app.scss */
+#sub-nav .nice.tabs dd {
+  background: url("../img/portal/line_dot_v.png") no-repeat right;
+  display: block;
+  float: left;
+  height: 30px;
+  padding: 0;
+  width: auto;
+}
+/* line 112, ../zurb/sass/app.scss */
+#sub-nav .nice.tabs dd a {
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  font-size: 1.5rem;
+  padding: 7px 18px 9px;
+  color: #555555;
+  display: block;
+  height: 21px;
+  line-height: 20px;
+  margin: 0 -1px 0 0;
+  padding: 8px 9px;
+  width: auto;
+}
+/* line 125, ../zurb/sass/app.scss */
+#sub-nav .nice.tabs dd a.active {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-bottom: 3px solid #00A6FC;
+  color: #333333;
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin: 0 10px;
+  position: relative;
+  top: -5px;
+}
+
+/* line 142, ../zurb/sass/app.scss */
+#search-form input.small.button[type="submit"] {
+  padding: 7px 18px;
+}
+/* line 145, ../zurb/sass/app.scss */
+#search-form .button.small {
+  font-size: 1.3rem;
+  padding: 1px 20px 10px;
+  width: auto;
+  color: #555;
+}
+
+/* line 160, ../zurb/sass/app.scss */
+#login-container, #register-container {
+  height: 400px;
+  margin: 30px auto 0;
+  width: 90%;
+}

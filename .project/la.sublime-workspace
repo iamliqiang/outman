@@ -1,0 +1,502 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/xampp/ws/la/application/controllers/home.php",
+			"settings":
+			{
+				"buffer_size": 1289,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/xampp/ws/la/application/views/layouts/default.blade.php",
+			"settings":
+			{
+				"buffer_size": 1654,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/xampp/ws/la/public/zurb/sass/app.scss",
+			"settings":
+			{
+				"buffer_size": 1133,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/xampp/ws/la/application/routes.php",
+			"settings":
+			{
+				"buffer_size": 3534,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/xampp/ws/la/application/views/home/login.blade.php",
+			"settings":
+			{
+				"buffer_size": 320,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/xampp/ws/la/application/views/home/register.blade.php",
+			"settings":
+			{
+				"buffer_size": 299,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 58.0,
+		"selected_items":
+		[
+			[
+				"installpackage",
+				"Package Control: Install Package"
+			],
+			[
+				"install package",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Set Syntax: PHP"
+			],
+			[
+				"",
+				"Set Syntax: HTML (Tcl)"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/xampp/ws/la/application/views/home/header.php",
+		"/D/xampp/ws/la/application/views/home/nav.blade.php",
+		"/D/xampp/ws/la/application/routes.php",
+		"/D/xampp/ws/la/application/views/home/index.php",
+		"/D/xampp/ws/la/application/views/home/footer.php",
+		"/D/xampp/ws/la/public/zurb/sass/_settings.scss",
+		"/D/xampp/ws/la/laravel/html.php",
+		"/D/xampp/ws/la/public/zurb/index.html",
+		"/D/xampp/ws/la/application/views/home/login.blade.php",
+		"/D/xampp/ws/la/application/views/layout/default.blade.php",
+		"/D/xampp/ws/la/laravel/view.php",
+		"/D/xampp/ws/la/application/views/layout/main.blade.php",
+		"/D/xampp/ws/la/application/controllers/base.php",
+		"/D/xampp/ws/la/public/js/modernizr.foundation.js",
+		"/D/xampp/ws/la/public/css/my.css",
+		"/D/xampp/ws/la/public/zurb/config.rb",
+		"/D/xampp/ws/la/public/foundation/config/assets.yml",
+		"/D/xampp/ws/la/laravel/blade.php",
+		"/D/xampp/ws/la/laravel/autoloader.php",
+		"/D/xampp/ws/la/public/index.php",
+		"/D/xampp/ws/la/public/zurb/sass/app.scss",
+		"/D/xampp/ws/la/public/zurb/sass/foundation.scss",
+		"/D/xampp/ws/la/public/zurb/sass/my.scss",
+		"/D/xampp/ws/la/public/zurb/css/my.css",
+		"/C/Ruby193/lib/ruby/gems/1.9.1/gems/ZURB-foundation-2.2.1.1/stylesheets/_ZURB-foundation.sass",
+		"/D/xampp/ws/la/public/zurb/css/foundation.css",
+		"/D/xampp/ws/la/public/zurb/stylesheets/foundation.css",
+		"/D/xampp/ws/la/public/foundation/marketing/prototype-example2.php",
+		"/D/xampp/ws/esotalk/models/ETSearchModel.class.php",
+		"/D/xampp/ws/la/zurb/index.html",
+		"/D/xampp/ws/la/public/index.html",
+		"/D/xampp/ws/zurb/index.html",
+		"/D/xampp/ws/la/public/foundation/stylesheets/mobile.css",
+		"/D/xampp/ws/la/laravel/core.php",
+		"/D/xampp/ws/la/laravel/database/eloquent/model.php",
+		"/D/xampp/ws/la/application/migrations/2012_05_04_084243_create_users_table.php",
+		"/D/xampp/ws/la/application/migrations/2012_05_04_085633_update_users_table.php",
+		"/D/xampp/ws/la/laravel/database/schema.php",
+		"/D/xampp/ws/la/application/config/database.php",
+		"/D/xampp/ws/la/artisan",
+		"/D/xampp/ws/la/application/config/application.php",
+		"/D/xampp/ws/la/laravel/request.php",
+		"/D/xampp/ws/la/laravel/response.php",
+		"/D/xampp/ws/la/laravel/helpers.php",
+		"/D/xampp/ws/la/laravel/redirect.php",
+		"/D/xampp/ws/la/license.txt",
+		"/D/xampp/ws/la/laravel/event.php",
+		"/D/xampp/ws/la/laravel/laravel.php",
+		"/D/xampp/ws/la/application/tests/application/views/home/index.php",
+		"/C/Users/max/Desktop/Dev/sftp-config.json",
+		"/D/xampp/ws/la/paths.php",
+		"/D/xampp/ws/la/.project/auto.complete.php",
+		"/C/Users/max/Desktop/Dev/Sftp_test.php",
+		"/C/Users/max/Desktop/google-plus-scraper-a18f83e/mining.js",
+		"/C/Users/max/AppData/Roaming/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/D/xampp/ws/la/application/controllers/home.php",
+		"/D/xampp/ws/la/application/start.php",
+		"/D/xampp/ws/la/readme.md",
+		"/D/xampp/ws/la/application/tests/application/config/error.php",
+		"/D/xampp/ws/la/laravel/cache.php",
+		"/D/xampp/ws/la/.gitignore",
+		"/D/xampp/ws/la/laravel/asset.php",
+		"/D/xampp/ws/la/laravel/auth.php",
+		"/D/xampp/ws/la/laravel/config.php",
+		"/C/Users/max/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/D/xampp/ws/la/public/nbproject/private/config.properties"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mainNAV",
+			"nest",
+			"getdata",
+			"update",
+			"Eloquent",
+			"HTML::entities",
+			"redirect::to",
+			"nest(",
+			"start",
+			"#DS",
+			"realpath",
+			"\n### [Off",
+			";",
+			"<?",
+			"php",
+			"<?"
+		],
+		"highlight": true,
+		"in_selection": true,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/xampp/ws/la/application/controllers/home.php",
+					"settings":
+					{
+						"buffer_size": 1289,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1280,
+								1280
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 378.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/xampp/ws/la/application/views/layouts/default.blade.php",
+					"settings":
+					{
+						"buffer_size": 1654,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1147,
+								1147
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/xampp/ws/la/public/zurb/sass/app.scss",
+					"settings":
+					{
+						"buffer_size": 1133,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								314,
+								314
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/xampp/ws/la/application/routes.php",
+					"settings":
+					{
+						"buffer_size": 3534,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1254,
+								1255
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 648.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/xampp/ws/la/application/views/home/login.blade.php",
+					"settings":
+					{
+						"buffer_size": 320,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								265,
+								265
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/D/xampp/ws/la/application/views/home/register.blade.php",
+					"settings":
+					{
+						"buffer_size": 299,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								287,
+								287
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"hea",
+				"application/views/home/header.php"
+			],
+			[
+				"h/l",
+				"application/views/home/login.blade.php"
+			],
+			[
+				"rout",
+				"application/routes.php"
+			],
+			[
+				"rou",
+				"application/routes.php"
+			],
+			[
+				"ar",
+				"artisan"
+			],
+			[
+				"",
+				"license.txt"
+			],
+			[
+				"lara",
+				"laravel/laravel.php"
+			],
+			[
+				"p/i",
+				"public/index.php"
+			],
+			[
+				"la/inde",
+				"application/tests/application/views/home/index.php"
+			],
+			[
+				"start.",
+				"application/start.php"
+			],
+			[
+				"home.p",
+				"application/controllers/home.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 246.0,
+	"status_bar_visible": true
+}

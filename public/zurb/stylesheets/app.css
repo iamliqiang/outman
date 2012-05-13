@@ -1,0 +1,69 @@
+/* Artfully masterminded by ZURB  */
+/* line 3, ../sass/app.scss */
+footer, header, menu, nav, section {
+  display: block;
+  font-size: 15px;
+}
+/* line 6, ../sass/app.scss */
+footer ul, header ul, menu ul, nav ul, section ul {
+  list-style: none outside none;
+}
+/* line 8, ../sass/app.scss */
+footer ul li, header ul li, menu ul li, nav ul li, section ul li {
+  display: block;
+  float: right;
+  padding-left: 3%;
+}
+
+/* line 18, ../sass/app.scss */
+#login-header {
+  margin: 25px auto 20px;
+}
+
+/* line 22, ../sass/app.scss */
+#header-hr {
+  margin-top: 5px;
+}
+
+/* line 26, ../sass/app.scss */
+.container {
+  padding: 0 20px;
+}
+
+/* line 30, ../sass/app.scss */
+.footer-grey {
+  background-color: #F5F5F5;
+  background-image: url("../img/misc/footer-shadow.gif");
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin-top: 180px;
+  color: #767676;
+}
+
+/* line 39, ../sass/app.scss */
+div.bold-footer {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/* line 47, ../sass/app.scss */
+.footer-grey #otcontact,
+.footer-grey #otword,
+.footer-grey #otnews {
+  padding-top: 30px;
+}
+
+/* line 51, ../sass/app.scss */
+ul.footer-nav li {
+  display: block;
+  float: right;
+  padding-left: 3%;
+}
+
+/* line 63, ../sass/app.scss */
+#login-container, #register-container {
+  height: 400px;
+  margin: 30px auto 0;
+  width: 90%;
+}

@@ -1,0 +1,232 @@
+<?php
+
+class Auth_Controller extends Base_Controller {
+
+	/*
+	|--------------------------------------------------------------------------
+	| The Authentication Controller
+	|--------------------------------------------------------------------------
+	|
+	| Instead of using RESTful routes and anonymous functions, you might wish
+	| to use controllers to organize your application API. You'll love them.
+	|
+	| This controller responds to URIs beginning with "home", and it also
+	| serves as the default controller for the application, meaning it
+	| handles requests to the root of the application.
+	|
+	| You can respond to GET requests to "/home/profile" like so:
+	|
+	|		public function action_profile()
+	|		{
+	|			return "This is your profile!";
+	|		}
+	|
+	| Any extra segments are passed to the method as parameters:
+	|
+	|		public function action_profile($id)
+	|		{
+	|			return "This is the profile for user {$id}.";
+	|		}
+	|
+	*/
+
+	public $restful = true;
+	
+	// public function __construct() {
+	// 	//$this->filter( 'before', 'guest' )->except( array( 'logout', 'validate' ) );
+
+	// 	// Note: We may not always require CSRF on login for system based logins so ignore it here.
+	// 	//$this->filter( 'before', 'csrf' )->on( 'post' )->except( array( 'login' ) );
+	// }
+
+	public function __construct()
+		{
+		    parent::__construct();
+		    // Note: We may not always require CSRF on login for system based logins so ignore it here.
+		    $this->filter('before', 'csrf')->on('post')->except( array( 'login' ) );;
+		}
+
+
+
+	public function get_index()
+	{
+		return View::make('auth.index');
+	}
+
+	public function get_error()
+	{
+		return View::make('auth.error');
+	}
+
+	public function get_success()
+	{
+		return View::make('auth.success');
+	}
+
+	public function get_login()
+	{
+	    $this->layout->nest('content', 'auth.login');
+
+	}
+
+	public function post_login()
+	{
+		$rules = array(
+			'email'    => 'required|email',
+			'password' => 'required|min:6|max:64',
+		);
+
+		$new_login = array(
+	        'email'     => Input::get('email'),
+	        'password'  => Input::get('password'),
+	    );
+
+		// Validate all input
+		$va = Validator::make( $new_login, $rules );
+
+		// Send them back with errors
+		if($va->fails())
+		{
+			// Validation has failed.
+			return Redirect::to('auth/login')
+							->with_input()
+							->with_errors($va);
+		}
+
+		// Attempt to authenticate
+		if( Auth::attempt( Input::get( 'email' ), Input::get( 'password' ) ) )
+		{
+			// Trigger log in event.
+			// Locker::trigger_event( 1, 'logged in', Auth::user()->id );
+
+			$user = DB::table('users')->where_email(Input::get('email'))->first();
+			return Redirect::to('auth/success')
+							->with('la_userid', $user->username);;
+		}
+		else
+	    {
+	        return Redirect::to('auth/login')
+							->with_input()
+							->with('login_errors', '身份验证错 ：');
+	    }
+
+	}
+
+    public function get_logout()
+    {
+        Auth::logout();
+        return Redirect::home();
+    }
+
+
+	public function get_register()
+	{
+	    $this->layout->nest('content', 'auth.register');
+	}
+
+	public function post_register()
+	{
+		$this->filter( 'before', 'csrf' );
+
+		$new_post = array(
+		//	'username'  => Input::get('username'),
+	        'email'     => Input::get('email'),
+	        'password'  => Input::get('password'),
+	        'password_confirmation' => Input::get('password_confirmation'),
+	    );
+
+
+		$rules = array(
+		//	'username'  => 'required|max:64|unique:users',
+		    'email'     => 'required|email|unique:users',
+		    'password'  => 'confirmed',
+		    'password_confirmation' => 'required|min:6|max:64',
+		);
+
+
+
+		$valid = Validator::make($new_post, $rules);
+	    if($valid->fails())
+		{
+			// Validation has failed.
+			return Redirect::to('auth/register')
+							->with_input()
+							->with_errors($valid)
+							->with('login_errors', '注册失败');
+		}
+	 
+		// Validation has succeeded. Create new user.
+		$new_post['password'] =  Hash::make($new_post['password'] );
+		
+		$user = new User(array( 'email'    => $new_post['email'],
+								'password' => $new_post['password']   ));
+		$user->save();
+
+    	// SEND VERIFY EMAIL 
+		$user = DB::table('users')->where_email($new_post['email'])->first();
+		$hash_v = md5( $user->password . $user->updated_at ) ; 
+		
+
+		$to      = $user->email; // Send email to our user  
+		$subject = '来自达人汇的用户注册验证邮件！'; // Give the email a subject  
+		$headers = 'From:noreply@outman.com' . "\r\n"; // Set from headers  
+		
+		$mail_content	= <<<EOT
+你好: $user->email 
+    您在达人汇--www.outman.com 申请用户注册，因此我们发送这封邮件进行确认。
+
+请在七天内点击下面的链接来验证你的邮箱。
+
+http://www.outman.com/auth/verify/mail/$user->email/$hash_v
+
+如果无法点击上面的链接，你可以复制该地址，并粘帖在浏览器的地址栏中访问。
+
+本邮件不需要回复！ 	    	 
+
+EOT;
+
+		mail($to, $subject, $mail_content, $headers); // Send our email  
+        
+        return Redirect::to('auth/success')
+				    	->with('la_userid', "验证邮件已经发到您的邮箱，请查收邮件并激活账号！");
+
+	}
+
+
+
+	public function get_mailVerify($mail=null, $hash=null)
+    {
+        if( !empty($mail) AND !empty($hash) )
+        {  
+        	$mail   = mysql_escape_string($mail);
+        	$hash = mysql_escape_string($hash);
+
+        	$userV = DB::table('users')->where_email($mail)->first();
+
+        	if($userV)
+        	{
+        		$hash_v = md5( $userV->password . $userV->updated_at ) ; 
+        		if ( ($hash_v == $hash) AND ($user_V == 0) ) 
+        		{
+					$affected = DB::table('users')
+							    ->where('email', '=', $mail)
+							    ->update(array('state' => 1 ) );
+        		}
+
+    		    return Redirect::to('auth/success')
+				    	->with('la_userid', "账号已经激活，您可以正常登录使用！");
+        	} else {
+
+        		return Redirect::to('auth/error')
+				    	->with('la_userid', "激活失败，此账号尚未注册！");
+        	}
+	         
+		}else{  
+		    return Redirect::to('auth/error')
+				    	->with('la_userid', "注册激活失败，注册URL参数不正确！");
+		}  
+    }
+
+
+
+}

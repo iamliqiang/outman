@@ -1,0 +1,173 @@
+/* Artfully masterminded by ZURB  */
+
+body {
+    font-family: "Microsoft YaHei", sans-serif, Tahoma, Verdana,  Helvetica ;
+    font-size: 13px;
+    font-size: 1.3rem;
+    line-height: 18px;
+    color: #555;
+}
+
+footer, header, menu, section {
+	display: block;
+	font-size: 13px;
+	ul { 
+		list-style: none outside none;
+		li {
+				display: block;
+			    float: right;
+			    padding-left: 2%;
+			}
+
+		}
+}
+
+
+#login-header {
+    margin: 15px auto 0;
+}
+
+
+header .login {
+   // background: url("#") no-repeat scroll right 13px transparent;
+    float: right;
+    font-family: "宋体";
+    height: 23px;
+    line-height: 22px;
+    padding: 1px 0 0 0;
+    dd {
+        padding: 1px 9px;
+        _padding: 3px 9px;
+        _line-height: 16px;
+        background: url("../img/portal/line_dot_v.png") no-repeat right;
+        float: left;
+    }
+    a {
+        color: #666;
+        line-height: 22px;
+        _line-height: 16px;
+        text-decoration: none;
+    }
+
+}
+
+
+.login-form {
+    padding: 25px;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.footer-grey {
+    background-color: #F5F5F5;
+    background-image: url("../img/misc/footer-shadow.gif");
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-top: 180px;
+    color: #767676;
+}
+
+div.bold-footer {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.footer-grey #otcontact, 
+.footer-grey #otword, 
+.footer-grey #otnews {
+    padding-top: 30px;
+}
+
+ul.footer-nav li {
+    display: block;
+    float: right;
+    padding-left: 3%;
+}
+
+
+// -- Sub nav
+//-------------------------
+
+#sub-nav {
+    margin-top:10px;
+    padding-top:3px;
+  //  border-top: 1px solid #EEEEEE;
+    .nice.tabs {
+        border-bottom:  1px solid #EEEEEE;
+        height: 23px;
+        margin: 0 0 30px;
+        display: block;
+        height: 30px;
+        padding: 0;
+        dd {
+            background: url("../img/portal/line_dot_v.png") no-repeat right;
+            display: block;
+            float: left;
+            height: 30px;
+            padding: 0;
+            width: auto;
+            a {
+                background: none repeat scroll 0 0 transparent;
+                border: medium none;
+                font-size: 1.5rem;
+                padding: 7px 18px 9px;
+                color: #555555;
+                display: block;
+                height: 21px;
+                line-height: 20px;
+                margin: 0 -1px 0 0;
+                padding: 8px 9px;
+                width: auto;
+            }
+            a.active {
+                background: none repeat scroll 0 0 #FFFFFF;
+            //    border-left: 1px solid #EEEEEE;
+            //    border-right: 1px solid #EEEEEE;
+                border-bottom: 3px solid #00A6FC;
+                color: #333333;
+                font-weight: bold;
+                font-size: 1.7rem;
+                margin: 0 10px;
+                position: relative;
+                top: -5px;
+            }
+        }
+    }
+}
+
+#search-form {
+    input.small.button[type="submit"] {
+    padding: 7px 18px;
+    }
+    .button.small {
+    font-size: 1.3rem;
+    padding: 1px 20px 10px;
+    width: auto;
+    color: #555;
+    }
+}
+
+
+
+// Table of Content
+//-----------------------------------------
+// - Shared Styles
+// - Login & Register Page 
+
+#login-container, #register-container {
+	height: 400px;
+    margin: 30px auto 0  ;
+    width: 90%;
+}
+
+
+// - Page Name 2
+
+// Shared Styles
+
+// Page Name 1
+
+// Page Name 2
